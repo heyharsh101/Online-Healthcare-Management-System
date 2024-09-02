@@ -1,0 +1,46 @@
+import cv2
+import numpy as np
+import tensorflow as tf
+
+def load_model():
+    return tf.keras.models.load_model('traffic_model.h5')
+
+def process_frame(frame, model):
+    resized_frame = cv2.resize(frame, (224, 224))
+    normalized_frame = resized_frame / 255.0
+    return np.expand_dims(normalized_frame, axis=0)
+
+def predict_traffic_density(frame, model):
+    processed_frame = process_frame(frame, model)
+    prediction = model.predict(processed_frame)
+    return np.argmax(prediction)
+
+def adjust_traffic_lights(density):
+    if density == 0:
+        print("Set Green Light")
+    elif density == 1:
+        print("Set Yellow Light")
+    else:
+        print("Set Red Light")
+
+def main():
+    model = load_model()
+    video_capture = cv2.VideoCapture('traffic_video.mp4')
+    
+    while video_capture.isOpened():
+        ret, frame = video_capture.read()
+        if not ret:
+            break
+
+        traffic_density = predict_traffic_density(frame, model)
+        adjust_traffic_lights(traffic_density)
+
+        cv2.imshow('Traffic Frame', frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    video_capture.release()
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main()
