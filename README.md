@@ -16,4 +16,9 @@ This is a healthcare management system project with login portals for **patients
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
+2. Open index.html in a browser to view the application.
 
+##How It Works
+Users can toggle between patient, doctor, and admin login forms by clicking on the respective tabs.
+Patient registration includes a gender selection and password confirmation.
+Each form is validated with required fields for security and ease of use.
