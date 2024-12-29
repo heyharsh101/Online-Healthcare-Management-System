@@ -55,5 +55,4 @@ This is a simple web-based Healthcare Management System that allows patients to 
 - Add screenshots to the `Screenshots` section for a more detailed README.
 - If you plan to add a license, include a `LICENSE` file in your repository.
 
-Let me know if you'd like any modifications!
 
