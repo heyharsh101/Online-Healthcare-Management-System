@@ -1,0 +1,71 @@
+/* Add spacing between form elements */
+form input,
+form select,
+form button,
+form label {
+    margin-bottom: 15px; /* Adds space between elements */
+    display: block; /* Ensures elements are stacked vertically */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Aligns elements vertically */
+    align-items: center; /* Centers elements horizontally */
+}
+
+form label {
+    text-align: left;
+    width: 100%; /* Ensures labels span the full width */
+    margin-bottom: 5px; /* Adds space between label and input */
+}
+
+form input,
+form select,
+form button {
+    width: 80%; /* Makes inputs consistent in width */
+    padding: 10px; /* Adds consistent padding */
+    margin-bottom: 15px; /* Adds spacing between form elements */
+    border: 1px solid #ccc; /* Adds a border for better visibility */
+    border-radius: 4px; /* Adds rounded corners */
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+form button {
+    width: auto; /* Makes the button size smaller */
+    padding: 10px 20px;
+    margin-top: 20px; /* Adds extra space before the button */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

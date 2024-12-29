@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="../css/style_all.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <form id="appointment-form">
+            <label for="doctor">Choose a Doctor:</label>
+            <select id="doctor" required>
+                <option value="kk-verma">Dr. KK Verma</option>
+                <option value="v-sharma">Dr. V Sharma</option>
+                <option value="vikas-gupta">Dr. Vikas Gupta</option>
+            </select>
+    
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+    
+            <label for="time">Select Time Slot:</label>
+            <input type="time" id="time" required>
+    
+            <button type="submit">Schedule</button>
+        </form>
+        <p id="confirmation-message"></p>
+    </div>    
+    <script src="../js/patient.js"></script>
+</body>
+</html>
