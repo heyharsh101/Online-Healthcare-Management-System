@@ -1,24 +1,59 @@
 # Global Hospitals - Healthcare Management System
-## Project Overview
-This is a healthcare management system project with login portals for **patients**, **doctors**, and **administrators**. Each type of user has a unique interface to register or log in.
+# Healthcare Management System
+
+This is a simple web-based Healthcare Management System that allows patients to book appointments, doctors to view their appointments, and admins to manage and view the overall system statistics.
 
 ## Project Structure
-- **index.html**: Main HTML file for the login interface.
-- **style.css**: Contains CSS styling for the web pages.
-- **script.js**: JavaScript file for tab functionality.
-  
+
+/project-folder
+├── /css
+│   └── style.css
+├── /js
+│   └── script.js
+├── /pages
+│   ├── patient.html
+│   ├── doctor.html
+│   └── admin.html
+├── index.html
+
+
 ## Features
-- **Patient Registration**: Patients can register with first name, last name, email, phone, password, and gender selection.
-- **Doctor and Admin Login**: Separate login interfaces for doctors and administrators.
-- **Responsive Design**: The layout adapts for different screen sizes.
 
-## Setup Instructions
-1. Clone the repository:
+### Patient Portal (`patient.html`)
+- Allows patients to:
+  - Select a doctor from a dropdown menu.
+  - Choose a date and time slot for an appointment.
+  - Schedule the appointment and receive a confirmation message.
+
+### Doctor Portal (`doctor.html`)
+- Allows doctors to:
+  - View the number of appointments scheduled for the day.
+  - Initially displays a message if no appointments are available.
+
+### Admin Portal (`admin.html`)
+- Allows admins to:
+  - View the total number of doctors.
+  - Check the number of appointments for each doctor.
+
+## Technologies Used
+- **HTML5**: For structuring the web pages.
+- **CSS3**: For styling and layout.
+- **JavaScript**: For dynamic interactivity and functionality.
+
+## How to Run
+1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-2. Open index.html in a browser to view the application.
+   git clone https://github.com/your-username/your-repository.git
+##screenshots
+![image](https://github.com/user-attachments/assets/d28e2e50-5cd9-439d-80c5-eecdb0fd6e98)
 
-## How It Works
-Users can toggle between patient, doctor, and admin login forms by clicking on the respective tabs.
-Patient registration includes a gender selection and password confirmation.
-Each form is validated with required fields for security and ease of use.
+![image](https://github.com/user-attachments/assets/b8bbc5f2-f8bd-4012-86ae-5cc2a5e7183a)
+
+
+### Notes:
+- Replace `https://github.com/your-username/your-repository.git` with your actual GitHub repository URL.
+- Add screenshots to the `Screenshots` section for a more detailed README.
+- If you plan to add a license, include a `LICENSE` file in your repository.
+
+Let me know if you'd like any modifications!
+
