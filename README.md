@@ -44,7 +44,7 @@ This is a simple web-based Healthcare Management System that allows patients to 
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/your-username/your-repository.git
-##screenshots
+## Screenshots
 ![image](https://github.com/user-attachments/assets/d28e2e50-5cd9-439d-80c5-eecdb0fd6e98)
 
 ![image](https://github.com/user-attachments/assets/b8bbc5f2-f8bd-4012-86ae-5cc2a5e7183a)
